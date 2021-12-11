@@ -56,7 +56,7 @@ final class StackExample {
                     userCommandArray = scanner.nextLine().split(" ");
                     aStack.push(Integer.parseInt(userCommandArray[indexOne]));
                 } else if (userInput.startsWith(allowedCommands[indexOne])) {
-                    aStack.pull();
+                    System.out.println("Removed: " + aStack.pull());
                 } else if (userInput.startsWith(allowedCommands[indexTwo])) {
                     aStack.showStack();
                 } else if (userInput.startsWith(allowedCommands[indexThree])) {
